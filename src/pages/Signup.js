@@ -4,15 +4,15 @@ import { StyleSheet, View, Text } from 'react-native';
 import Logo from '../components/Logo';
 import Form from '../components/Form';
 
-export default class Login extends Component {
+export default class Signup extends Component {
     render() {
         return (
             <View style={styles.container}>
                 <Logo />
-                <Form type="Login" />
+                <Form type="Signup" />
                 <View style={styles.signupTextCont}>
-                    <Text style={styles.signupText}>Don't have an account yet?</Text>
-                    <Text style={styles.signupButton}>Signup</Text>
+                    <Text style={styles.signupText}>Already have an accountt?</Text>
+                    <Text style={styles.signupButton}>Sign In</Text>
                 </View>
             </View>
         );
