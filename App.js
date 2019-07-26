@@ -2,8 +2,8 @@ import React ,{ Component } from 'react';
 import { StyleSheet, View, Text ,StatusBar } from 'react-native';
 
 
-import Login from './src/pages/Login';
-import Signup from './src/pages/Signup';
+import Navigator from './src/app';
+import Form from './src/components/Form'
 
 
 
@@ -15,7 +15,8 @@ export default class App extends Component{
                     backgroundColor='rgba(136, 14, 79, 0.9)'
                     barStyle = 'light-content'
                 />
-                <Signup/>
+                
+                <Navigator />
             </View>
         );
         

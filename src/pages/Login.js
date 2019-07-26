@@ -3,8 +3,12 @@ import { StyleSheet, View, Text } from 'react-native';
 
 import Logo from '../components/Logo';
 import Form from '../components/Form';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
-export default class Login extends Component {
+export  class Login extends Component {
+    constructor(props){
+        super(props)
+    }
     render() {
         return (
             <View style={styles.container}>
@@ -13,6 +17,7 @@ export default class Login extends Component {
                 <View style={styles.signupTextCont}>
                     <Text style={styles.signupText}>Don't have an account yet?</Text>
                     <Text style={styles.signupButton}>Signup</Text>
+                   
                 </View>
             </View>
         );
@@ -46,3 +51,4 @@ const styles = StyleSheet.create({
         fontWeight: '500'
     }
 });
+
