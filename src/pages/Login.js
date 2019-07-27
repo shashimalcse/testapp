@@ -16,7 +16,7 @@ export  class Login extends Component {
                 <Form type="Login" />
                 <View style={styles.signupTextCont}>
                     <Text style={styles.signupText}>Don't have an account yet?</Text>
-                    <Text style={styles.signupButton}>Signup</Text>
+                    <Text style={styles.signupButton} onPress={() => this.props.navigation.navigate('Signup')}>Signup</Text>
                    
                 </View>
             </View>

@@ -11,7 +11,9 @@ const AppNavigator = createStackNavigator(
         Login:Login,
         Signup:Signup
     },{
-        initialRouteName:'Login'
+        initialRouteName:'Login',
+        headerMode: 'none',
     }
+    
 );
 export default createAppContainer(AppNavigator);

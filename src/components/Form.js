@@ -15,11 +15,16 @@ export default class Form extends Component {
                 <TextInput style={styles.inputbox}
                     placeholder="Email"
                     placeholderTextColor="rgba(136, 14, 79, 0.7)" 
+                    keyboardType="email-address"
+                    selectionColor="rgba(136, 14, 79, 0.7)"
+                    onSubmitEditing={()=>this.password.focus()}
                     />
                 <TextInput style={styles.inputbox}
                     placeholder="Password"
                     placeholderTextColor="rgba(136, 14, 79, 0.7)" 
                     secureTextEntry={true}
+                    selectionColor="rgba(136, 14, 79, 0.7)"
+                    ref={(input)=>this.password = input}
                     />
 
 
@@ -46,7 +51,7 @@ const styles = StyleSheet.create({
         borderRadius: 25,
         paddingHorizontal: 16,
         fontSize: 16,
-        color: '#ffffff',
+        color: 'rgba(136, 14, 79, 0.7)',
         marginVertical: 10,
 
     },

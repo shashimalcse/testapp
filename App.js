@@ -10,14 +10,14 @@ import Form from './src/components/Form'
 export default class App extends Component{
     render(){
         return(
-            <View style={styles.container}>
-                <StatusBar
-                    backgroundColor='rgba(136, 14, 79, 0.9)'
-                    barStyle = 'light-content'
-                />
-                
+            // <View>
+            //     <StatusBar
+            //         backgroundColor='rgba(136, 14, 79, 0.9)'
+            //         barStyle = 'light-content'
+            //     />
+            // </View>    
                 <Navigator />
-            </View>
+            
         );
         
     }
